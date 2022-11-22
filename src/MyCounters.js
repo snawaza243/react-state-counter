@@ -1,11 +1,10 @@
 import React from 'react'
 import './MyCounter.css'
+document.title = `Stateful Counter App`
 class MyCounter extends React.Component {
   constructor () {
     super()
     this.state = { count: 0 }
-    // document.title = `Count (${this.state.count})`
-    var t1  = `hello`
   }
 
   render () {
@@ -17,7 +16,7 @@ class MyCounter extends React.Component {
             <div id='app-title'>
               <h1>Stateful Counter App </h1>
               <div id='result'>
-                <h1>Lest's Start Counting : {document.title = `${this.state.count}`}</h1>
+                <h1>Lest's Start Counting : {this.state.count}</h1>
               </div>
               <div id='bottom'></div>
               <button
